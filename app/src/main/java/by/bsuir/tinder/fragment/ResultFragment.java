@@ -1,3 +1,8 @@
+/**
+ * Created by Alexander Lomat
+ */
+
+
 package by.bsuir.tinder.fragment;
 
 import android.content.Context;
@@ -18,6 +23,9 @@ import by.bsuir.tinder.R;
 import by.bsuir.tinder.adapter.ItemAdapter;
 import by.bsuir.tinder.view.HomeButton;
 
+/**
+ * The type Result fragment.
+ */
 public class ResultFragment extends Fragment {
 
     private FragmentHelper fragmentHelper;

@@ -1,3 +1,8 @@
+/**
+ * Created by Alexander Lomat
+ */
+
+
 package by.bsuir.tinder.view;
 
 import android.content.Context;
@@ -9,12 +14,21 @@ import android.view.View;
 
 import androidx.annotation.Nullable;
 
+/**
+ * The type Custom image view.
+ */
 public class CustomImageView extends View {
 
     private Bitmap bitmapToDraw;
     private Matrix mShaderMatrix;
     private CustomTextView title;
 
+    /**
+     * Instantiates a new Custom image view.
+     *
+     * @param context the context
+     * @param attrs   the attrs
+     */
     public CustomImageView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
 
@@ -29,6 +43,11 @@ public class CustomImageView extends View {
         updateBitmapSize();
     }
 
+    /**
+     * Sets bitmap to draw.
+     *
+     * @param bitmapToDraw the bitmap to draw
+     */
     public void setBitmapToDraw(Bitmap bitmapToDraw) {
         this.bitmapToDraw = bitmapToDraw;
 

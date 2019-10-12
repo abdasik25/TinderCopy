@@ -1,3 +1,8 @@
+/**
+ * Created by Alexander Lomat
+ */
+
+
 package by.bsuir.tinder;
 
 import android.os.Bundle;
@@ -16,6 +21,9 @@ import by.bsuir.tinder.fragment.MainFragment;
 import by.bsuir.tinder.fragment.ResultFragment;
 import by.bsuir.tinder.pojo.TinderImage;
 
+/**
+ * The type Main activity.
+ */
 public class MainActivity extends AppCompatActivity implements FragmentHelper {
 
     private MainFragment mainFragment;

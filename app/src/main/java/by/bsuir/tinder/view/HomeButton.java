@@ -1,3 +1,8 @@
+/**
+ * Created by Alexander Lomat
+ */
+
+
 package by.bsuir.tinder.view;
 
 import android.content.Context;
@@ -12,6 +17,9 @@ import android.view.View;
 
 import androidx.annotation.Nullable;
 
+/**
+ * The type Home button.
+ */
 public class HomeButton extends View {
 
     private RectF buttonBackground;
@@ -31,6 +39,12 @@ public class HomeButton extends View {
     private static final int BUTTON_COLOR = Color.BLACK;
     private static final int BACKGROUND_COLOR = Color.WHITE;
 
+    /**
+     * Instantiates a new Home button.
+     *
+     * @param context the context
+     * @param attrs   the attrs
+     */
     public HomeButton(Context context, @Nullable AttributeSet attrs) {
 
         super(context, attrs);

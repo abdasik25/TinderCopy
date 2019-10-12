@@ -1,3 +1,7 @@
+/**
+ * Created by Alexander Lomat
+ */
+
 package by.bsuir.tinder.adapter;
 
 import android.graphics.Bitmap;
@@ -25,6 +29,9 @@ import by.bsuir.tinder.pojo.TinderImage;
 import by.bsuir.tinder.view.CustomImageView;
 import by.bsuir.tinder.view.CustomTextView;
 
+/**
+ * The type Item adapter.
+ */
 public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder> implements ItemTouchHelperAdapter {
 
     private static final String DISTANCE = " km from you";
@@ -37,6 +44,13 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
     private List<TinderImage> likedTinderImages;
 
 
+    /**
+     * Instantiates a new Item adapter.
+     *
+     * @param tinderImages   the tinder images
+     * @param fragmentHelper the fragment helper
+     * @param itemPerScreen  the item per screen
+     */
     public ItemAdapter(List<TinderImage> tinderImages, FragmentHelper fragmentHelper, int itemPerScreen) {
         likedTinderImages = new ArrayList<>();
         this.tinderImages = tinderImages;
@@ -82,6 +96,9 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
         }
     }
 
+    /**
+     * The type Item view holder.
+     */
     class ItemViewHolder extends RecyclerView.ViewHolder {
 
         private CustomImageView imageView;
@@ -91,6 +108,11 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
         private static final float HEIGHT_PERCENTAGE = 95f / 100;
         private static final int TEXT_SIZE = 45;
 
+        /**
+         * Instantiates a new Item view holder.
+         *
+         * @param itemView the item view
+         */
         ItemViewHolder(View itemView) {
             super(itemView);
 
@@ -100,6 +122,11 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
             distance = itemView.findViewById(R.id.item_distance);
         }
 
+        /**
+         * Bind.
+         *
+         * @param tinderImage the tinder image
+         */
         void bind(TinderImage tinderImage) {
 
             title.setText(tinderImage.getTitle());

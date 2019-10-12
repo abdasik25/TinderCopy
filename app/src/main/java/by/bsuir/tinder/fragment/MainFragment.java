@@ -1,3 +1,8 @@
+/**
+ * Created by Alexander Lomat
+ */
+
+
 package by.bsuir.tinder.fragment;
 
 import android.content.Context;
@@ -21,6 +26,9 @@ import by.bsuir.tinder.adapter.ItemAdapter;
 import by.bsuir.tinder.callback.ItemTouchHelperCallback;
 import by.bsuir.tinder.pojo.TinderImage;
 
+/**
+ * The type Main fragment.
+ */
 public class MainFragment extends Fragment {
 
     private static final int ITEMS_PER_SCREEN = 1;

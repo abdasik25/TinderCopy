@@ -1,3 +1,8 @@
+/**
+ * Created by Alexander Lomat
+ */
+
+
 package by.bsuir.tinder.callback;
 
 import android.graphics.Canvas;
@@ -12,10 +17,18 @@ import by.bsuir.tinder.adapter.ItemTouchHelperAdapter;
 import static androidx.recyclerview.widget.ItemTouchHelper.LEFT;
 import static androidx.recyclerview.widget.ItemTouchHelper.RIGHT;
 
+/**
+ * The type Item touch helper callback.
+ */
 public class ItemTouchHelperCallback extends ItemTouchHelper.Callback {
 
     private final ItemTouchHelperAdapter adapter;
 
+    /**
+     * Instantiates a new Item touch helper callback.
+     *
+     * @param adapter the adapter
+     */
     public ItemTouchHelperCallback(ItemTouchHelperAdapter adapter) {
         this.adapter = adapter;
     }
